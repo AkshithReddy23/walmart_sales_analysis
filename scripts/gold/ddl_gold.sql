@@ -1,5 +1,5 @@
-IF OBJECT_ID ('Gold.sale_info','U')  IS NOT NULL
-	DROP TABLE Gold.sale_info;
+IF OBJECT_ID ('Gold.sale_info','V')  IS NOT NULL
+	DROP VIEW Gold.sale_info;
 
 CREATE VIEW Gold.sale_info AS 
 
