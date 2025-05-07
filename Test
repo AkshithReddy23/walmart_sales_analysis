@@ -1,0 +1,48 @@
+SELECT * 
+FROM Bronze.sale_info 
+WHERE sales IS NULL
+
+SELECT * 
+FROM Bronze.sale_info 
+WHERE sales_flag IS NULL
+
+SELECT * 
+FROM Bronze.sale_info 
+WHERE sales_cpi IS NULL
+
+SELECT * 
+FROM Bronze.sale_info 
+WHERE TRY_CAST(CONVERT(DATE,sale_date,103) AS DATE) IS NULL
+
+
+SELECT * 
+FROM Bronze.sale_info 
+WHERE sale_date IS NULL
+
+
+SELECT * FROM Silver.sale_info
+
+
+SELECT * 
+FROM Silver.sale_info 
+WHERE TRY_CAST(CONVERT(DATE,sale_date,103) AS DATE) IS NULL
+
+SELECT * 
+FROM Silver.sale_info
+WHERE sales_flag = '1'
+
+SELECT * 
+FROM Silver.sale_info
+WHERE temp > '76'
+
+
+SELECT CAST(AVG(sales)  AS DECIMAL(10,2)) AS total_sale
+FROM Silver.sale_info
+
+
+SELECT 
+	*,
+	AVG(sales) OVER(ORDER BY sale_date) AS avg_sales 
+FROM Gold.sale_info 
+
+
