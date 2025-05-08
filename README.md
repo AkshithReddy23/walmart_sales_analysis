@@ -35,6 +35,6 @@ This project presents a complete data analysis pipeline for Walmart sales data u
 - ✅ Fuel Price by Store
 - ✅ Interactive slicers (Year, Month)
 
-![Dashboard Screenshot](C:\Users\akshi\OneDrive\Pictures\Screenshots\walmart_sales_dashboard.png)
+![Dashboard Screenshot](./C:\Users\akshi\OneDrive\Pictures\Screenshots\walmart_sales_dashboard.png)
 
 
